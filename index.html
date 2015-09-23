@@ -8,19 +8,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+    <link rel="stylesheet" href="source/helpers/jquery.fancybox-buttons.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="source/helpers/jquery.fancybox-buttons.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="source/helpers/jquery.fancybox-thumbs.css" type="text/css" media="screen" />
 </head>
 <body>
 	<figure class="logo"><img src="img/logoxopantech.png" alt=""></figure>
 	<section class="content">
 		<p>XopanTech ofrece excelentes soluciones para la industria, el estado y los sectores financieros, comercial y de servicios.</p>
 		<p class="second_p">Una oferta de productos y servicios para soluciones efectivas en tiempos muy cortos, con costos predeterminados y con máxima calidad.</p>
-		<video src="Xopan_Final_2_5.mp4" autoplay="true" controls="true"></video>
-		<p>Nuestro sitio está en construccion <strong>Estaremos en línea ¡Muy Pronto!</strong></p>
+		<div class="video">CONOZCA NUESTRO VIDEO INFORMATIVO<br><br>
+		<a class="fancybox-media" href="www.youtube.com/watch?v=jkFlzpXy23s"><img src="img/play43.png" alt=""></a>
+		</div>
+		<p>Nuestro sitio está en construcción <strong>Estaremos en línea ¡Muy Pronto!</strong></p>
 	</section>
 	<div class="border"></div>
 	<footer>
 		<p>México D.F.<br>
-		XopanTech, S.A de C.V. Paseo de la Reforma #265 Piso 12 Colonia Cuauhtemoc, C.p: 06500 México D.F.<br>
+		XopanTech, S.A de C.V. Paseo de la Reforma #265 Piso 12 Colonia Cuauhtémoc, C.p: 06500 México D.F.<br>
 		Tel. (55) 5511 1522 Fax. (55) 5511 1463<br>
 		Info@xopan.com
 		</p>
@@ -29,5 +35,21 @@
 			Blvd. Juan Alonso De Torres No. 1443, Piso 1, Colonia Valle Del Campestre, C.P. 37150, León Guanajuato.- Tel: +52 (477) 1529434
 		</p>
 	</footer>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="source/jquery.fancybox.pack.js"></script>
+<script type="text/javascript" src="source/helpers/jquery.fancybox-buttons.js"></script>
+<script type="text/javascript" src="source/helpers/jquery.fancybox-media.js"></script>
+<script type="text/javascript" src="source/helpers/jquery.fancybox-thumbs.js"></script>
+    <script type="text/javascript">
+	      $(document).ready(function() {
+	        $('.fancybox-media').fancybox({
+		    openEffect  : 'none',
+		    closeEffect : 'none',
+		    helpers : {
+			media : {}
+		       }
+	          });
+            });
+    </script>
 </body>
 </html>
